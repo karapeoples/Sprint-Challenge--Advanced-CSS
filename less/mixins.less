@@ -1,1 +1,32 @@
 // Mixins Here
+
+.flex(@justify, @direction, @align){
+    display:flex;
+    justify-content:@justify;
+    flex-direction:@direction;
+    align-items:@align;
+}
+
+.size(@size){
+    font-size:@size;
+}
+
+.buttons(@background,@color) {
+    display: block;
+    background: @background;
+    margin: 0 1% 2%;
+    cursor: grab;
+    width: 30%;
+    text-align: center;
+    .size(250%);
+    border-radius: 5px;
+    border: 3px groove #23293B;
+    color: @color;
+    &:hover {
+      background:@color;
+      color: @background;
+    }
+  }
+
+  
+  
